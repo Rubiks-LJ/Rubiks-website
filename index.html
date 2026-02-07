@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+<meta charset="UTF-8">
+<title>Rubik's LJ</title>
+
+<!-- Favicon -->
+<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* background image */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/static/background.png") center/cover no-repeat;
+}
+
+/* glass card */
+.card {
+  width: 420px;
+  padding: 40px;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(14px);
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+.pfp {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.subtitle {
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.socials a {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 18px white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="/static/pfp.jpg" class="pfp">
+
+  <h1>Rubik's LJ</h1>
+  <div class="subtitle">CONTENT CREATOR</div>
+
+  <div class="socials">
+    <a href="https://x.com/CarterLoganjay" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.youtube.com/@RubiksLJ" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.twitch.tv/rubikslj" target="_blank"><i class="fab fa-twitch"></i></a>
+    <a href="https://www.tiktok.com/@rubiks_lj" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://discord.gg/kMrNkXprxv" target="_blank"><i class="fab fa-discord"></i></a>
+  </div>
+</div>
+
+</body>
+</html>
